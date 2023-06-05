@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/rent.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="images/header/fabi/favicon.ico">
+    <link rel="manifest" href="images/header/fabi/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/header/fabi/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="images/logo/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>이젠제주투어 : 런터카</title>
+</head>
+
+<body>
+    <div id="wrap">
+        </header>
+        <!-- visual -->
+        <section id="visual" class="rentVis">
+            <div class="viss">
+                <div class="bgibox box1">
+                    <div class="inner">
+                    </div>
+                </div>
+                <div class="inner">
+                    <div class="search">
+                        <p class="when">
+                            <span class="start_date">인수 날짜/시간</span>
+                            <span class="end_date">반납 날짜/시간</span>
+                            <span class="insu">자차보험 선택</span>
+                            <input type="text" maxlength="6" class="age" placeholder="운전자 생년월일 ex) 970101">
+                        </p>
+                        <button class="serch_btn">가격비교하기</button>
+                        <div class="popInsuBox">
+                            <div class="popInsu">
+                                <p><i class="xi-close"></i></p>
+                                <ul>
+                                    <li>일반자차</li>
+                                    <li>완전자차</li>
+                                    <li>슈퍼자차</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="popDateBox">
+                            <div class="popDateBox1">
+                                <p><i class="xi-close"></i></p>
+                                <div class="popDate">
+                                    <table class="popDateS">
+                                        <thead>
+                                            <tr>
+                                                <td><i class="xi-angle-left-min prev"></i></td>
+                                                <td colspan="5">
+                                                    <span class="year"></span>년
+                                                    <span class="month"></span>월
+                                                </td>
+                                                <td><i class="xi-angle-right-min next"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td>일</td>
+                                                <td>월</td>
+                                                <td>화</td>
+                                                <td>수</td>
+                                                <td>목</td>
+                                                <td>금</td>
+                                                <td>토</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+                                </div>
+                                <div class="timeS">
+                                    <select name="timeS" id="time1" class="time_select">
+                                        <option value="09시 00분">09시 00분</option>
+                                        <option value="10시 00분">10시 00분</option>
+                                        <option value="11시 00분">11시 00분</option>
+                                        <option value="12시 00분">12시 00분</option>
+                                        <option value="13시 00분">13시 00분</option>
+                                        <option value="14시 00분">14시 00분</option>
+                                        <option value="15시 00분">15시 00분</option>
+                                        <option value="16시 00분">16시 00분</option>
+                                        <option value="17시 00분">17시 00분</option>
+                                        <option value="18시 00분">18시 00분</option>
+                                        <option value="19시 00분">19시 00분</option>
+                                        <option value="20시 00분">20시 00분</option>
+                                        <option value="21시 00분">21시 00분</option>
+                                        <option value="22시 00분">22시 00분</option>
+                                        <option value="23시 00분">23시 00분</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popDateBoxR">
+                            <div class="popDateBox1">
+                                <p><i class="xi-close"></i></p>
+                                <div class="popDate">
+                                    <table class="popDateS">
+                                        <thead>
+                                            <tr>
+                                                <td><i class="xi-angle-left-min prev"></i></td>
+                                                <td colspan="5">
+                                                    <span class="year"></span>년
+                                                    <span class="month"></span>월
+                                                </td>
+                                                <td><i class="xi-angle-right-min next"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td>일</td>
+                                                <td>월</td>
+                                                <td>화</td>
+                                                <td>수</td>
+                                                <td>목</td>
+                                                <td>금</td>
+                                                <td>토</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+
+                                </div>
+                                <div class="timeE">
+                                    <select name="timeS" id="time2" class="time_select">
+                                        <option value="09시 00분">09시 00분</option>
+                                        <option value="10시 00분">10시 00분</option>
+                                        <option value="11시 00분">11시 00분</option>
+                                        <option value="12시 00분">12시 00분</option>
+                                        <option value="13시 00분">13시 00분</option>
+                                        <option value="14시 00분">14시 00분</option>
+                                        <option value="15시 00분">15시 00분</option>
+                                        <option value="16시 00분">16시 00분</option>
+                                        <option value="17시 00분">17시 00분</option>
+                                        <option value="18시 00분">18시 00분</option>
+                                        <option value="19시 00분">19시 00분</option>
+                                        <option value="20시 00분">20시 00분</option>
+                                        <option value="21시 00분">21시 00분</option>
+                                        <option value="22시 00분">22시 00분</option>
+                                        <option value="23시 00분">23시 00분</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- content -->
+        <main id="content" class="rentCon">
+            <section class="spe rent">
+                <div class="inner">
+                    <h3>제주 렌터카 예약도<i class="xi-car"></i></h3>
+                    <h3>믿을 수 있는 이젠제주투어는!</h3>
+                    <div class="rentboxOut">
+                        <div class="rentbox">
+                            <ul class="rent_recomend-box">
+                                <div class="swiper mySwiper_rent">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <li>
+                                                <img src="images/rent/content1/con5.png" alt="">
+                                                <strong>할인 받고 새로운 추억 만들기</strong>
+                                            </li>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <li>
+                                                <img src="images/rent/content1/con6.png" alt="">
+                                                <strong>이젠제주투어 최저가 보장</strong>
+                                            </li>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <li>
+                                                <img src="images/rent/content1/con1.png" alt="">
+                                                <strong>한도무제한 프리미엄 자차보험</strong>
+                                            </li>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <li>
+                                                <img src="images/rent/content1/con2.png" alt="">
+                                                <strong>야간인수/새벽반납 무료!</strong>
+                                            </li>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <li>
+                                                <img src="images/rent/content1/con4.png" alt="">
+                                                <strong>반려동물 동반가능 렌터카</strong>
+                                            </li>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <li>
+                                                <img src="images/rent/content1/con3.png" alt="">
+                                                <strong>유모차/카시트 무료 대여 서비스</strong>
+                                            </li>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="rent_event">
+                <div class="inner">
+                    <ul class="rent_eventbox">
+                        <div class="swiper mySwiper_event">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <li>
+                                        <a href="#"><img src="images/rent/content2/con1.png" alt=""></a>
+                                    </li>
+                                </div>
+                                <div class="swiper-slide">
+                                    <li>
+                                        <a href="#"><img src="images/rent/content2/con2.png" alt=""></a>
+                                    </li>
+                                </div>
+                                <div class="swiper-slide">
+                                    <li>
+                                        <a href="#"><img src="images/rent/content2/con3.png" alt=""></a>
+                                    </li>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </ul>
+                </div>
+            </section>
+            <section class="rent_search">
+                <div class="inner">
+                    <div class="rent_searchbox">
+                        <div class="rent_type">
+                            <ul>
+                                <li class="">전체</li>
+                                <li class="E">전기</li>
+                                <li class="L">경형</li>
+                                <li class="S">준중형</li>
+                                <li class="M">중형</li>
+                                <li class="B">대형</li>
+                                <li class="I">수입</li>
+                                <li class="R">승합RV</li>
+                                <li class="V">SUV</li>
+                            </ul>
+                        </div>
+                        <ul class="vehicles_list">
+
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- benefit -->
+            <section class="benefit">
+                <div class="inner">
+                    <h3>
+                        이젠제주투어만의 특별한 혜택!
+                    </h3>
+                    <ul>
+                        <div class="swiper mySwiper_bene">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <li><a href="#"><img src="images/airport/con3/coupon.jpg" alt=""></a>
+                                        <p>당신이 ONE하는 혜택!</p>
+                                        <span>국내항공 혜택 모음.ZIP</span>
+                                    </li>
+                                </div>
+                                <div class="swiper-slide">
+                                    <li><a href="#"><img src="images/airport/con3/card.jpg" alt=""></a>
+                                        <p>국내 항공 최대 10% 할인!</p>
+                                        <span>카드사별 할인 혜택</span>
+                                    </li>
+                                </div>
+                                <div class="swiper-slide">
+                                    <li><a href="#"><img src="images/airport/con3/shop.jpg" alt=""></a>
+                                        <p>면세점 중복 할인!</p>
+                                        <span>제주공항 면세점 쇼핑 혜택</span>
+                                    </li>
+                                </div>
+                                <div class="swiper-slide">
+                                    <li><a href="#"><img src="images/airport/con3/hotel.jpg" alt=""></a>
+                                        <p>회원 고객 항공권 구매 혜택</p>
+                                        <span>제주도 호텔 5% 할인쿠폰 제공!</span>
+                                    </li>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer id="footer">
+        </footer>
+    </div>
+    <script src="js/rent.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper_rent", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+        var swiper2 = new Swiper(".mySwiper_event", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+        var swiperBene = new Swiper(".mySwiper_bene", {
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+</body>
