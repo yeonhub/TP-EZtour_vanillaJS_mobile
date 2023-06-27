@@ -136,7 +136,7 @@ btnHotelchooseChildbtn[1].addEventListener('click', e => {
     btnHotelchooseChildSpan.textContent = hotelChildCount;
 })
 
-var swiper = new Swiper(".mySwiper", {
+var mainVisualSwiper = new Swiper(".mainVisulSwiper", {
     slidesPerView: 1,
     spaceBetween: 30,
     autoplay: {
@@ -154,87 +154,33 @@ var swiper = new Swiper(".mySwiper", {
     },
 });
 
-btnFreeTravelNext.addEventListener('click', e => {
-    FreeTravelListLeft -= 305;
-    if (FreeTravelListLeft < -2460) { FreeTravelListLeft = -2440; }
-    freeTravelList.style.left = FreeTravelListLeft + 'px';
-})
+var disPackSwiper = new Swiper(".discount_pack_swiper", {
+    slidesPerView: "auto",
+    spaceBetween: 10,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+});
 
-btnFreeTravelPrev.addEventListener('click', e => {
-    FreeTravelListLeft += 305;
-    if (FreeTravelListLeft > 0) { FreeTravelListLeft = 0; }
-    freeTravelList.style.left = FreeTravelListLeft + 'px';
-})
-///////////////// 5월 15일 추가분 ///////////////////////
+var freeTravelSwiper = new Swiper(".free-travel-flow", {
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+});
 
-let bestgoodsTimer = null;
-let bestgoodsidx = 0;
-const bestgoodsinterval = 3000;
-
-function bestgoodsRolling() {
-    bestgoodsidx++;
-    bestgoodsidx = bestgoodsidx % 3;
-    bestGoodsNavLi.forEach(element => {
-        element.classList.remove('on');
-    })
-    bestGoodsViewLi.forEach(element => {
-        element.classList.remove('on');
-    })
-    bestGoodsNavLi[bestgoodsidx].classList.add('on');
-    bestGoodsViewLi[bestgoodsidx].classList.add('on');
-}
-bestgoodsTimer = setInterval(bestgoodsRolling, bestgoodsinterval);
-
-
-bestGoodsNavLi.forEach((element, idx) => {
-    element.addEventListener('click', e => {
-        bestGoodsNavLi.forEach(element => {
-            element.classList.remove('on');
-        })
-        bestGoodsViewLi.forEach(element => {
-            element.classList.remove('on');
-        })
-        e.currentTarget.classList.add('on');
-        bestGoodsViewLi[idx].classList.add('on');
-        bestgoodsidx = idx;
-        clearInterval(bestgoodsTimer);
-        bestgoodsTimer = setInterval(bestgoodsRolling, bestgoodsinterval);
-    })
-})
-
-
-let recomendLeftTimer = null;
-let recomendLeftidx = 0;
-const recomendLeftinterval = 3000;
-
-function recomendLeftRolling() {
-    recomendLeftidx++;
-    recomendLeftidx = recomendLeftidx % 4;
-    recommendLeftLi.forEach(element => {
-        element.classList.remove('on');
-    })
-    recommendRightUl.forEach(element => {
-        element.classList.remove('on');
-    })
-    recommendLeftLi[recomendLeftidx].classList.add('on');
-    recommendRightUl[recomendLeftidx].classList.add('on');
-}
-recomendLeftTimer = setInterval(recomendLeftRolling, recomendLeftinterval);
-
-recommendLeftLi.forEach((element, idx) => {
-    element.addEventListener('click', e => {
-        recommendLeftLi.forEach(element => {
-            element.classList.remove('on');
-        })
-        recommendRightUl.forEach(element => {
-            element.classList.remove('on');
-        })
-        e.currentTarget.classList.add('on');
-        recommendRightUl[idx].classList.add('on');
-        recomendLeftidx = idx;
-        clearInterval(recomendLeftTimer);
-        recomendLeftTimer = setInterval(recomendLeftRolling, recomendLeftinterval);
-    })
+var recommend_con_swiper = new Swiper(".right-side-content", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
 });
 //////////////////////////////////////////////////////////
 // 비주얼 추천 예약 nav
@@ -528,14 +474,6 @@ startTravelDateAir.addEventListener('click', e => {
     startTravelCalendarAir.classList.toggle('on');
 })
 
-// 이전달 버튼 클릭
-// function prevCalendar() {
-//     nowMonth = new Date(nowMonth.getFullYear(), nowMonth.getMonth() - 1, nowMonth.getDate());   // 현재 달을 1 감소
-//     buildCalendar();    // 달력 다시 생성
-//     buildCalendar_Air();    // 달력 다시 생성
-//     buildCalendar_Start();    // 달력 다시 생성
-//     buildCalendar_End();    // 달력 다시 생성
-// }
 
 const mainPackageTabCalendarPrev = get('.startTravelCalendar .Calendar thead tr td:nth-child(1)');
 const mainPackageTabCalendarNext = get('.startTravelCalendar .Calendar thead tr td:nth-child(3)');
@@ -580,14 +518,6 @@ mainHotelEndTabCalendarNext.addEventListener('click', e => {
     buildCalendar_End();    // 달력 다시 생성
 })
 
-// 다음달 버튼 클릭
-// function nextCalendar() {
-//     nowMonth = new Date(nowMonth.getFullYear(), nowMonth.getMonth() + 1, nowMonth.getDate());   // 현재 달을 1 증가
-//     buildCalendar();
-//     buildCalendar_Air();    // 달력 다시 생성
-//     buildCalendar_Start();    // 달력 다시 생성
-//     buildCalendar_End();    // 달력 다시 생성
-// }
 
 // input값이 한자리 숫자인 경우 앞에 '0' 붙혀주는 함수
 function leftPad(value) {
@@ -694,3 +624,38 @@ btnOnlyTeam.addEventListener('click', e => {
 btnOnlyTeam_air.addEventListener('click', e => {
     e.currentTarget.classList.toggle('off');
 })
+
+let bestgoodsTimer = null;
+let bestgoodsidx = 0;
+const bestgoodsinterval = 3000;
+
+function bestgoodsRolling() {
+    bestgoodsidx++;
+    bestgoodsidx = bestgoodsidx % 3;
+    bestGoodsNavLi.forEach(element => {
+        element.classList.remove('on');
+    })
+    bestGoodsViewLi.forEach(element => {
+        element.classList.remove('on');
+    })
+    bestGoodsNavLi[bestgoodsidx].classList.add('on');
+    bestGoodsViewLi[bestgoodsidx].classList.add('on');
+}
+
+bestgoodsTimer = setInterval(bestgoodsRolling, bestgoodsinterval);
+
+bestGoodsNavLi.forEach((element, idx) => {
+    element.addEventListener('click', e => {
+        bestGoodsNavLi.forEach(element => {
+            element.classList.remove('on');
+        })
+        bestGoodsViewLi.forEach(element => {
+            element.classList.remove('on');
+        })
+        e.currentTarget.classList.add('on');
+        bestGoodsViewLi[idx].classList.add('on');
+        bestgoodsidx = idx;
+        clearInterval(bestgoodsTimer);
+        bestgoodsTimer = setInterval(bestgoodsRolling, bestgoodsinterval);
+    })
+});
