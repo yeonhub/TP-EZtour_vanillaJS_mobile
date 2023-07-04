@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <title>이젠제주투어 : 여행패키지</title>
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="top-menu-bar">
+                <i class="xi-bars"></i>
+                <img src="./images/header/logo.png" alt="">
+                <a href="./login.html"><i class="xi-user-o"></i></a>
+            </div>
+            <div class="headerConbox">
+                <div class="menu-content">
+                    <div class="top-content">
+                        <div class="container">
+                            <img src="./images/header/logo.png" alt="">
+                            <h2>이젠제주투어</h2>
+                            <div class="icon-box">
+                                <a href="#"><i class="xi-close"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="center-content">
+                        <div class="main-menu-content">
+                            <div class="left-content">
+                                <ul class="gnb">
+                                    <li>여행패키지</li>
+                                    <li>특가예약</li>
+                                    <li>관광지</li>
+                                    <li>프로모션</li>
+                                    <li>고객센터</li>
+                                </ul>
+                                <div class="opening_hours">
+                                    <div class="opening_info">
+                                        <img src="./images/header/gnb_timeInfo_bg.png" alt="">
+                                        <div class="opening_text">
+                                            <span class="date">날짜칸</span><br>
+                                            <span>운영시간<br><strong class="workTime">시간</strong></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="login">
+                                    <a href="login.html"><button>로그인</button></a>
+                                    <a href="join.html"><button>회원가입</button></a>
+                                </div>
+                            </div>
+                            <div class="sub-menu-content">
+                                <div class="sub-menu">
+                                    <ul class="on">
+                                        <div class="choose_menu">
+                                            <P>여행패키지</P>
+                                        </div>
+                                        <a href="package.html">
+                                            <li><i class="xi-package"></i><span>여행패키지</span></li>
+                                        </a>
+                                    </ul>
+                                    <ul>
+                                        <div class="choose_menu">
+                                            <P>특가예약</P>
+                                        </div>
+                                        <a href="airport.html">
+                                            <li><i class="xi-airplane"></i><span>항공권</span></li>
+                                        </a>
+                                        <a href="hotel.html">
+                                            <li><i class="xi-hotel"></i><span>호텔</span></li>
+                                        </a>
+                                        <a href="rent.html">
+                                            <li><i class="xi-car"></i><span>렌터카</span></li>
+                                        </a>
+                                    </ul>
+                                    <ul>
+                                        <div class="choose_menu">
+                                            <P>관광지</P>
+                                        </div>
+                                        <a href="active.html">
+                                            <li><i class="xi-ship"></i><span>레저/잠수함</span></li>
+                                        </a>
+                                        <a href="museum.html">
+                                            <li><i class="xi-network-public"></i><span>공원/전시/박물관</span></li>
+                                        </a>
+                                        <a href="food.html">
+                                            <li><i class="xi-restaurant"></i><span>Restaurant</span></li>
+                                        </a>
+                                    </ul>
+                                    <ul>
+                                        <div class="choose_menu">
+                                            <P>프로모션</P>
+                                        </div>
+                                        <a href="promotion.html">
+                                            <li><i class="xi-gift"></i><span>Event</span></li>
+                                        </a>
+                                        <a href="membership.html">
+                                            <li><i class="xi-credit-card"></i><span>제휴/멤버십</span></li>
+                                        </a>
+                                    </ul>
+                                    <ul>
+                                        <div class="choose_menu">
+                                            <P>고객센터</P>
+                                        </div>
+                                        <a href="notice.html">
+                                            <li><i class="xi-info"></i><span>공지사항</span></li>
+                                        </a>
+                                        <a href="qna.html">
+                                            <li><i class="xi-help"></i><span>자주 묻는 질문</span></li>
+                                        </a>
+                                    </ul>
+                                </div>
+                                <div class="more-menu">
+                                    <ul>
+                                        <li><i class="xi-search"></i><span>검색</span></li>
+                                        <li><i class="xi-group"></i><span>단체</span></li>
+                                        <li><i class="xi-network-company"></i><span>기업체</span></li>
+                                        <li><i class="xi-market"></i><span>상품몰</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg">
+                </div>
+            </div>
+        </header>
+
+        <aside id="packbanner">
+            <div class="pack_aside_banner">
+                <div class="swiper pack_aside_banner_roll">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/package_m/banner_0.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="images/package_m/banner_1.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="images/package_m/banner_2.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="images/package_m/banner_3.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="images/package_m/banner_4.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="images/package_m/banner_5.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="images/package_m/banner_6.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="images/package_m/banner_7.png" alt=""></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </aside>
+        <section id="visual" class="packVis">
+            <div class="inner">
+                <div class="packV_search">
+                    <ul>
+                        <li>
+                            <strong>출발일</strong>
+                            <div class="go"><span>출발날짜</span><i class="xi-angle-down"></i></div>
+                        </li>
+                        <li>
+                            <strong>일정</strong>
+                            <div class="date"><span>1박 2일</span> <i class="xi-angle-down"></i></div>
+                        </li>
+                        <li>
+                            <strong>인원</strong>
+                            <div class="people"><span>성인 1명, 아동 0명</span> <i class="xi-angle-down"></i></div>
+                        </li>
+                    </ul>
+                </div>
+                <button class="btt"><i class="xi-search"></i>패키지 상품 찾기</button>
+                <div class="packV_spop_go">
+                    <table class="packV_calendar">
+                        <thead>
+                            <tr>
+                                <td class="pack_prevCal" style="cursor:pointer;">&#60;</td>
+                                <td colspan="5">
+                                    <span id="calYear"></span>년
+                                    <span id="calMonth"></span>월
+                                </td>
+                                <td class="pack_nextCal" style="cursor:pointer;">&#62;</td>
+                            </tr>
+                            <tr>
+                                <td>일</td>
+                                <td>월</td>
+                                <td>화</td>
+                                <td>수</td>
+                                <td>목</td>
+                                <td>금</td>
+                                <td>토</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+                <ul class="packV_spop_date">
+                    <li>1박 2일</li>
+                    <li>2박 3일</li>
+                    <li>3박 4일</li>
+                    <li>4박 5일</li>
+                    <li>5박 6일</li>
+                    <li>6박 7일</li>
+                    <li>7박 8일</li>
+                    <li>8박 9일</li>
+                </ul>
+                <div class="packV_spop_people">
+                    <p class="packV_o">
+                        <em>성인</em>
+                        <button class="packV_btn_o packV_btn_o_prev"><i class="xi-plus"></i></button>
+                        <span class="ol">1</span>
+                        <button class="packV_btn_o packV_btn_o_next"><i class="xi-minus"></i></button>
+                    </p>
+                    <p class="packV_y">
+                        <em>아동</em>
+                        <button class="packV_btn_y packV_btn_y_prev"><i class="xi-plus"></i></button>
+                        <span class="yo">0</span>
+                        <button class="packV_btn_y packV_btn_y_next"><i class="xi-minus"></i></button>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <main id="container" class="packCon">
+            <section id="content">
+                <div class="packmain_banner">
+                    <div class="inner">
+                        <div class="txt">
+                            <strong>EZENJEJUTOUR RECOMMEND</strong>
+                            <h2>설렘 가득! 행복한 제주여행<br>
+                                떠나볼까요?✈️</h2>
+                        </div>
+                        <div class="swiper packmain_banner_roll">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><a href="tour.html"><img
+                                            src="images/package_m/pack_aside_banner_0.jpg" alt=""><span>청만들기</span> </a>
+                                </div>
+                                <div class="swiper-slide"><a href="museum.html"><img
+                                            src="images/package_m/pack_aside_banner_1.jpg" alt=""><span>동물원</span></a>
+                                </div>
+                                <div class="swiper-slide"><a href="tour.html"><img
+                                            src="images/package_m/pack_aside_banner_2.jpg" alt=""><span>카멜리아힐</span></a>
+                                </div>
+                                <div class="swiper-slide"><a href="museum.html"><img
+                                            src="images/package_m/pack_aside_banner_3.jpg" alt=""><span>패러세일링</span></a>
+                                </div>
+                                <div class="swiper-slide"><a href="museum.html"><img
+                                            src="images/package_m/pack_aside_banner_4.jpg" alt=""><span>아쿠아리움</span></a>
+                                </div>
+                                <div class="swiper-slide"><a href="museum.html"><img
+                                            src="images/package_m/pack_aside_banner_5.jpg" alt=""><span>산양큰엉곶</span></a>
+                                </div>
+                                <div class="swiper-slide"><a href="tour.html"><img
+                                            src="images/package_m/pack_aside_banner_6.jpg" alt=""><span>카트클럽</span></a>
+                                </div>
+                                <div class="swiper-slide"><a href="tour.html"><img
+                                            src="images/package_m/pack_aside_banner_7.jpg" alt=""><span>승마체험</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="packmain">
+                    <div class="packmain_con">
+                        <div class="txt">
+                            <strong>WEEKLY BEST DEALS</strong>
+                            <h2>이번 주에 가장<br>
+                                사랑받은 패키지 <span>TOP 10</span> </h2>
+                        </div>
+                        <div class="main_btn">
+                            <strong class="btn on">제주시</strong>
+                            <em>·</em>
+                            <strong class="btn">서귀포시</strong>
+                        </div>
+                        <div class="packakegmain">
+                            <div class="info_bg"></div>
+                            <div class="inner">
+                                <div class="swiper packmain_info on">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="images/package_m/pac_main0.jpg" alt="">
+                                            <strong>아모렉스리조트</strong>
+                                            <em>위치 : 제주시</em>
+                                            <em>포함내역 : 항공 + 숙박 + 렌터카</em>
+                                            <b><span>315,400</span>원~</b>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/package_m/pac_main1.jpg" alt="">
+                                            <strong>스완지리조트</strong>
+                                            <em>위치 : 제주시</em>
+                                            <em>포함내역 : 항공 + 숙박 + 렌터카</em>
+                                            <b><span>325,400</span>원~</b>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/package_m/pac_main2.jpg" alt="">
+                                            <strong>휘슬호텔(휘슬락)</strong>
+                                            <em>위치 : 제주시</em>
+                                            <em>포함내역 : 항공 + 숙박 + 렌터카</em>
+                                            <b><span>365,400</span>원~</b>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/package_m/pac_main3.jpg" alt="">
+                                            <strong>호텔더원</strong>
+                                            <em>위치 : 제주시</em>
+                                            <em>포함내역 : 항공 + 숙박 + 렌터카</em>
+                                            <b><span>295,400</span>원~</b>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/package_m/pac_main4.jpg" alt="">
+                                            <strong>메종글래드제주</strong>
+                                            <em>위치 : 제주시</em>
+                                            <em>포함내역 : 항공 + 숙박 + 렌터카</em>
+                                            <b><span>515,400</span>원~</b>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/package_m/pac_main5.jpg" alt="">
+                                            <strong>로긴리조트</strong>
+                                            <em>위치 : 제주시</em>
+                                            <em>포함내역 : 항공 + 숙박 + 렌터카</em>
+                                            <b><span>355,400</span>원~</b>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/package_m/pac_main6.jpg" alt="">
+                                            <strong>롯데시티호텔</strong>
+                                            <em>위치 : 제주시</em>
+                                            <em>포함내역 : 항공 + 숙박 + 렌터카</em>
+                                            <b><span>490,400</span>원~</b>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/package_m/pac_main7.jpg" alt="">
+                                            <strong>그라벨호텔</strong>
+                                            <em>위치 : 제주시</em>
+                                            <em>포함내역 : 항공 + 숙박 + 렌터카</em>
+                                            <b><span>375,400</span>원~</b>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/package_m/pac_main8.jpg" alt="">
+                                            <strong>캠퍼트리호텔/리조트</strong>
+                                            <em>위치 : 제주시</em>
+                                            <em>포함내역 : 항공 + 숙박 + 렌터카</em>
+                                            <b><span>589,600</span>원~</b>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/package_m/pac_main9.jpg" alt="">
+                                            <strong>시리우스</strong>
+                                            <em>위치 : 제주시</em>
+                                            <em>포함내역 : 항공 + 숙박 + 렌터카</em>
+                                            <b><span>325,400</span>원~</b>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper packmain_info">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="images/package_m/pac_main10.jpg" alt="">
+                                            <strong>더 그랜드 섬오름</strong>
+                                            <em>위치 : 서귀포시</em>
+                                            <em>포함내역 : 항공 + 숙박 + 렌터카</em>
+                                            <b><span>501,400</span>원~</b>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/package_m/pac_main11.jpg" alt="">
+                                            <strong>서귀포JS호텔</strong>
+                                            <em>위치 : 서귀포시</em>
+                                            <em>포함내역 : 항공 + 숙박 + 렌터카</em>
+                                            <b><span>325,400</span>원~</b>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/package_m/pac_main12.jpg" alt="">
+                                            <strong>오션팰리스호텔</strong>
+                                            <em>위치 : 서귀포시</em>
+                                            <em>포함내역 : 항공 + 숙박 + 렌터카</em>
+                                            <b><span>315,400</span>원~</b>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/package_m/pac_main13.jpg" alt="">
+                                            <strong>예이츠산장</strong>
+                                            <em>위치 : 서귀포시</em>
+                                            <em>포함내역 : 항공 + 숙박 + 렌터카</em>
+                                            <b><span>347,400</span>원~</b>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/package_m/pac_main14.jpg" alt="">
+                                            <strong>바다위올레</strong>
+                                            <em>위치 : 서귀포시</em>
+                                            <em>포함내역 : 항공 + 숙박 + 렌터카</em>
+                                            <b><span>345,400</span>원~</b>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/package_m/pac_main15.jpg" alt="">
+                                            <strong>귤낭하우스</strong>
+                                            <em>위치 : 서귀포시</em>
+                                            <em>포함내역 : 항공 + 숙박 + 렌터카</em>
+                                            <b><span>375,400</span>원~</b>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/package_m/pac_main16.jpg" alt="">
+                                            <strong>디아일랜드블루</strong>
+                                            <em>위치 : 서귀포시</em>
+                                            <em>포함내역 : 항공 + 숙박 + 렌터카</em>
+                                            <b><span>385,400</span>원~</b>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/package_m/pac_main17.jpg" alt="">
+                                            <strong>토스카나</strong>
+                                            <em>위치 : 서귀포시</em>
+                                            <em>포함내역 : 항공 + 숙박 + 렌터카</em>
+                                            <b><span>785,400</span>원~</b>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/package_m/pac_main18.jpg" alt="">
+                                            <strong>돈내코힐 스파리조트</strong>
+                                            <em>위치 : 서귀포시</em>
+                                            <em>포함내역 : 항공 + 숙박 + 렌터카</em>
+                                            <b><span>501,400</span>원~</b>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/package_m/pac_main19.jpg" alt="">
+                                            <strong>제주엠리조트</strong>
+                                            <em>위치 : 서귀포시</em>
+                                            <em>포함내역 : 항공 + 숙박 + 렌터카</em>
+                                            <b><span>325,400</span>원~</b>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="more"><a href="#">more <i class="xi-long-arrow-right"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer id="footer">
+            <div class="container">
+                <div class="info">
+                    <div class="footertop">
+                        <span><a href="#">회사소개</a></span>
+                        <span><a href="#">이용약관</a></span>
+                        <span><a href="#">여행약관</a></span>
+                        <span><a href="#">개인정보처리방침</a></span><br>
+                        <span><a href="#">해외여행자보험</a></span>
+                        <span><a href="#">마케팅제휴</a></span>
+                        <span><a href="#">공식인증예약센터 검색</a></span>
+                    </div>
+                    <div class="more">
+                        <div class="infoItem">
+                            <a href="#"><img src="./images/footer/instagram.png" alt=""></a>
+                            <a href="#"><img src="./images/footer/facebook.png" alt=""></a>
+                            <a href="#"><img src="./images/footer/naverblog.png" alt=""></a>
+                            <a href="#"><img src="./images/footer/youtube.png" alt=""></a>
+                        </div>
+                        <div class="moreButton">
+                            <img src="./images/footer/logo_text.png" alt="">
+                            <i class="xi-caret-down"></i>
+                        </div>
+                    </div>
+                    <div class="infoText">
+                        <span><strong>(주)이젠제주투어</strong></span>
+                        <span><strong>대표</strong> 김하진</span><br>
+                        <span><strong>주소</strong> (00000) 인천광역시 부평구 청천동 0길 00</span><br>
+                        <span><strong>사업자등록번호</strong> 102-81-00000</span><br>
+                        <span><strong>통신판매업신고번호</strong> 부평01-1806호</span><br>
+                        <span><strong>관광사업자 등록번호</strong> 제1993-000006호</span><br>
+                        <span><strong>개인정보 보호책임자</strong> 전준형</span><br>
+                        <span><strong>가입팩스</strong> 02-734-0392</span>
+                        <span><strong>이메일</strong> ezenacd@jeju.com</span><br>
+                        <span><strong>고객센터</strong> 1577-0000</span>
+                        <span><strong>항공권문의</strong> 1899-0000</span>
+                    </div>
+                    <span>※ 부득이한 사정에 의해 여행일정이 변경되는 경우 사전 동의를 받습니다.</span><br><br>
+                    <span>※ 이젠제주투어는 개별 항공권, 단품 및 일부 여행상품에 대하여 통신판매중개자로서 통신판매의 당사자가 아니며 해당상품의 거래정보 및 거래등에 대해 책임을 지지
+                        않습니다.</span><br><br>
+                    <span class="copyright">COPYRIGHTⓒ EZENJEJUTOUR SERVICE INC. ALL RIGHTS RESERVED</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/swiperbanner.js"></script>
+</body>
+
+</html>
