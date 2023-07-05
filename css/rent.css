@@ -1,0 +1,629 @@
+#wrap {
+    width: 100%;
+}
+
+.inner {
+    width: 95%;
+    margin: auto;
+    position: relative;
+    box-sizing: border-box;
+}
+/* rent */
+/* rent */
+/* rent */
+/* rent */
+/* rent */
+.airportVis img,
+.airportCon img,
+.hotelVis img,
+.hotelCon img,
+.rentVis img,
+.rentCon img {
+    vertical-align: baseline;
+}
+/* rent visual */
+.rentVis {
+    position: relative;
+    width: 100%;
+    height: 100vw;
+    text-align: center;
+}
+
+.rentVis .viss {
+    position: absolute;
+    width: 100%;
+    z-index: 5;
+}
+
+.rentVis .viss img {
+    width: 100%;
+    height: 166.6667vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.rentVis .inner {
+    position: relative;
+    height: 80vw;
+}
+
+.rentVis .bgibox {
+    position: absolute;
+    width: 100%;
+    transition: 0.4s;
+}
+
+.rentVis .bgibox .inner {
+    width: 100%
+}
+
+.rentVis .box1 {
+    background-image: url(../images/rent/visual/visual11.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+}
+.rentVis .box1::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30vw;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+}
+
+.rentVis .bgibox h3:first-child {
+    margin: 0;
+}
+
+.rentVis .bgibox p {
+    text-align: left;
+    font-size: 3.8889vw;
+    font-weight: normal;
+}
+
+/* search */
+.rentVis .inner .search {
+    position: absolute;
+    width: 95vw;
+    height: 75vw;
+    background: white;
+    top: 10%;
+    bottom: 5.5556vw;
+    box-sizing: border-box;
+    box-shadow: 0.0000vw 0.0000vw 2.7778vw;
+    padding: 5.5556vw;
+    text-align: left;
+    z-index: 5;
+    border-radius: 7vw;
+}
+
+.rentVis .inner .search {
+    text-align: left;
+}
+
+.rentVis .inner .search .when {
+    margin-top: 5.5556vw;
+    margin-bottom: 2.7778vw;
+}
+
+.rentVis .inner .search .when span {
+    display: inline-block;
+    width: 27.7778vw;
+    height: 13.8889vw;
+    padding: 2.7778vw;
+    color: gray;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.rentVis .inner .search .when .age {
+    /* position: absolute; */
+    bottom: 0;
+    left: 5vw;
+    width: 69.4444vw;
+    height: 13.8889vw;
+    font-size: 5.0000vw;
+    padding: 2.7778vw;
+    border: none;
+    color: #000;
+}
+
+.rentVis .inner .search .when .start_date,
+.rentVis .inner .search .when .end_date {
+    font-size: 5.0000vw;
+    width: 80vw;
+    margin-right: 4.1667vw;
+    vertical-align: middle;
+}
+
+.rentVis .inner .search .when .insu {
+    width: 55.5556vw;
+    font-size: 5.0000vw;
+    vertical-align: middle;
+    margin-left: 0vw;
+}
+
+.rentVis .inner .search .serch_btn {
+    margin-top: 6vw;
+    width: 100%;
+    height: 13.8889vw;
+    border-radius: 2.7778vw;
+    background: skyblue;
+    color: white;
+    border: none;
+    font-size: 5.0000vw;
+    cursor: pointer;
+}
+
+/* rent popup */
+
+.rentVis .inner .search .popInsu p {
+    margin: 2.7778vw;
+    text-align: right;
+}
+
+.rentVis .inner .search .popInsu p i {
+    font-size: 8.3333vw;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.rentVis .inner .search .popInsu p i:hover {
+    transform: rotate(90deg);
+    color: red;
+}
+
+/* rent calendal */
+.rentVis .inner .search .popDateBox {
+    position: absolute;
+    overflow: hidden;
+    z-index: -10;
+    width: 100%;
+    height: 0.0000vw;
+    top: 25vw;
+    left: 0vw;
+    box-sizing: border-box;
+    padding: 5.5556vw;
+}
+
+.rentVis .inner .search .popDateBox .popDateBox1 {
+    position: absolute;
+    background: white;
+    border: 0.2778vw solid #000;
+    width: 100%;
+    height: 150.0000vw;
+    top: -150.0000vw;
+    left: 0.0000vw;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.rentVis .inner .search .popDateBox .popDateBox1 .timeS .time_select,
+.rentVis .inner .search .popDateBoxR .popDateBox1 .timeE .time_select {
+    position: absolute;
+    bottom: 4.1667vw;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 41.6667vw;
+    height: 13.8889vw;
+    box-sizing: border-box;
+    padding: 2.7778vw;
+    font-size: 5.5556vw;
+    text-align: center;
+}
+
+.rentVis .inner .search .popDateBoxR {
+    position: absolute;
+    overflow: hidden;
+    z-index: -10;
+    width: 100%;
+    height: 0.0000vw;
+    top: 36vw;
+    left: 0vw;
+    box-sizing: border-box;
+    padding: 5.5556vw;
+}
+
+.rentVis .inner .search .popDateBoxR .popDateBox1 {
+    position: absolute;
+    background: white;
+    border: 0.2778vw solid #000;
+    width: 100%;
+    height: 130vw;
+    top: -150.0000vw;
+    left: 0.0000vw;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.rentVis .inner .search .popDateBoxO {
+    position: absolute;
+    overflow: hidden;
+    z-index: -10;
+    width: 100%;
+    height: 0.0000vw;
+    top: 50.0000vw;
+    left: 0vw;
+    box-sizing: border-box;
+    padding: 5.5556vw;
+}
+
+.rentVis .inner .search .popDateBoxO .popDateBox1 {
+    position: absolute;
+    background: white;
+    border: 0.2778vw solid #000;
+    width: 100%;
+    height: 133.3333vw;
+    top: -133.3333vw;
+    left: 0.0000vw;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.rentVis .inner .search .popDate {
+    padding-left: 2vw;
+}
+
+.rentVis .inner .search .popDateBox1 .popDate {
+    display: flex;
+    align-items: flex-start;
+}
+
+.rentVis .inner .search .popDateBox1>p {
+    margin: 2.7778vw;
+    margin-bottom: 5.5556vw;
+    text-align: right;
+}
+
+.rentVis .inner .search .popDateBox1>p i {
+    font-size: 8.3333vw;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.rentVis .inner .search .popDate td {
+    width: 5vw;
+    height: 5vw;
+    vertical-align: top;
+}
+
+.rentVis .inner .search .popDate .popDateS {
+    width: 97.2222vw;
+    height: auto;
+    margin-right: 11.1111vw;
+}
+
+.rentVis .inner .search .popDate table {
+    text-align: center;
+}
+
+.rentVis .inner .search .popDate table i {
+    font-size: 9.4444vw;
+}
+
+.rentVis .inner .search .popDate table thead tr:first-child td {
+    font-weight: bold;
+    font-size: 6.1111vw;
+}
+
+.rentVis .inner .search .popDate table thead tr:last-child td {
+    font-weight: bold;
+    font-size: 5.0000vw;
+}
+
+.rentVis .inner .search .popDate table tbody>tr>td>p {
+    height: 11vw;
+    width: 11vw;
+    border-radius: 12.5000vw;
+    transition-duration: 0.2s;
+    line-height: 12.5000vw;
+    margin: 0.6944vw;
+    display: block;
+    text-align: center;
+}
+
+.rentVis .inner .search .popDate table .pastDay {
+    color: lightgray;
+}
+
+.rentVis .inner .search .popDate table .today {
+    background: tan;
+    color: white;
+}
+
+.rentVis .inner .search .popDate table .futureDay {
+    background: white;
+}
+
+.rentVis .inner .search .popDate table .futureDay:hover {
+    background: lightgray;
+}
+
+.rentVis .inner .search .popDate table .futureDay.choiceDay,
+.rentVis .inner .search .popDate table .today.choiceDay {
+    background: orange;
+    color: white;
+}
+
+.rentVis .inner .search .popInsuBox {
+    position: absolute;
+    overflow: hidden;
+    z-index: -10;
+    width: 100%;
+    height: 0.0000vw;
+    top: 53vw;
+    left: 0vw;
+    box-sizing: border-box;
+}
+
+.rentVis .inner .search .popInsu {
+    position: absolute;
+    background: white;
+    border: 0.2778vw solid #000;
+    width: 100%;
+    /* height: 75.0000vw; */
+    height: 47.2222vw;
+    top: -47.2222vw;
+    left: 0.0000vw;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.rentVis .inner .search .popInsu p {
+    margin: 2.7778vw;
+    text-align: right;
+}
+
+.rentVis .inner .search .popInsu p i {
+    font-size: 8.3333vw;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.rentVis .inner .search .popInsu p i {
+    transform: rotate(90deg);
+    color: red;
+}
+
+.rentVis .inner .search .popInsu ul {
+    display: flex;
+    justify-content: space;
+    margin: 7vw;
+    margin-top: 4.1667vw;
+    padding-top: 4.1667vw;
+    border-top: 0.2778vw solid gray;
+}
+
+.rentVis .inner .search .popInsu li {
+    text-align: center;
+    margin: 2.2222vw 2.7vw;
+    padding: 1.3889vw;
+    height: 13.8889vw;
+    font-size: 4.8vw;
+    cursor: pointer;
+}
+
+.rentVis .inner .search .popInsu li:hover {
+    text-decoration: underline;
+}
+
+/* rent content */
+.rentCon .inner {
+    height: 152.7778vw;
+    box-sizing: border-box;
+}
+
+.rentCon .rent .inner {
+    height: 110vw;
+}
+
+.rentCon .rent .inner h3:first-child {
+    padding-top: 10vw;
+}
+
+.rentCon .rent .inner h3 {
+    font-size: 6vw;
+    text-align: center;
+    margin-bottom: 5vw;
+}
+
+.rentCon .rent .inner h3 .xi-car {
+    margin-left: 2.7778vw;
+}
+
+.rentCon .rent .rentbox {
+    margin-top: 5.5556vw;
+}
+
+
+.rentCon .rent .rent_recomend-box li {
+    border-radius: 2.7778vw;
+    margin-bottom: 10vw;
+}
+
+.rentCon .rent .rent_recomend-box li img {
+    width: 80vw;
+    margin: auto;
+    display: block;
+    border-radius: 2.7778vw;
+}
+
+.rentCon .rent .rent_recomend-box li strong {
+    display: block;
+    font-size: 5vw;
+    font-weight: 600;
+    margin-top: 3vw;
+    margin-bottom: 2.7778vw;
+    margin-left: 9vw;
+}
+
+.rentCon .rent_event .inner {
+    height: 90vw;
+}
+.rentCon .rent_event .inner li {
+    margin-bottom: 10vw;
+}
+
+
+/* search */
+.rentCon .rent_search .inner {
+    height: auto;
+}
+
+.rentCon .rent_search .inner .rent_type ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5.5556vw;
+}
+
+.rentCon .rent_search .inner .rent_type ul li {
+    font-size: 4vw;
+    padding: 1vw 2.5vw;
+    cursor: pointer;
+    box-sizing: border-box;
+    font-weight: 600;
+    margin-bottom: 5vw;
+    box-sizing: border-box;
+    width: 18vw;
+    text-align: center;
+}
+
+.rentCon .rent_search .inner .rent_type ul li:first-child {
+    background: skyblue;
+    border-radius: 2.7778vw;
+    margin-right: 18vw;
+}
+
+.rentCon .rent_search .inner .rent_searchbox .vehicles_list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    /* justify-content: space-around; */
+}
+.rentCon .rent_search .inner .rent_searchbox .vehicles_list li {
+    padding: 1vw;
+    box-sizing: border-box;
+    display: flex;
+    border: 0.2778vw solid lightgray;
+    border-radius: 2.7778vw;
+    margin: 0.94vw;
+    width: 48%;
+    height: 32vw;
+}
+.rentCon .rent_search .inner .rent_searchbox .vehicles_list li .pic_model img {
+    display: block;
+    width: 20vw;
+    margin: 2vw;
+}
+
+.rentCon .rent_search .inner .rent_searchbox .vehicles_list li .pic_model strong {
+    display: block;
+    text-align: left;
+    font-size: 3vw;
+    font-weight: 600;
+    margin-left: 2vw;
+    margin-top: 1.5vw;
+}
+
+.rentCon .rent_search .inner .rent_searchbox .vehicles_list li .pic_model span {
+    color: gray;
+    font-size: 1vw;
+    text-align: right;
+    margin-left: 2vw;
+}
+
+.rentCon .rent_search .inner .rent_searchbox .vehicles_list li .price {
+    height: 30vw;
+    display: flex;
+    font-size: 1vw;
+    margin-right: 1vw;
+    flex-direction: column;
+}
+
+.rentCon .rent_search .inner .rent_searchbox .vehicles_list li .price a {
+    font-size: 2vw;
+    color: #000;
+    margin: auto 0.0000vw;
+}
+
+.rentCon .rent_search .inner .rent_searchbox .vehicles_list li .price p i {
+    margin-right: 2.7778vw;
+}
+
+.rentCon .rent_search .inner .rent_searchbox .vehicles_list li .price a:last-child i {
+    color: blue;
+}
+
+.rentCon .rent_search .inner .rent_searchbox .vehicles_list li .price a:nth-child(2) i {
+    color: green;
+}
+
+.rentCon .rent_search .inner .rent_searchbox .vehicles_list li .price p em {
+    color: gray;
+}
+
+.rentCon .rent_search .inner .rent_searchbox .vehicles_list li .price p span {
+    float: right;
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* rent benefit */
+.rentCon .benefit {
+    margin-top: 10px;
+    height: 140vw;
+    background: lightgoldenrodyellow;
+}
+
+.rentCon .benefit h3 {
+    padding-top: 13.8889vw;
+    margin-bottom: 11.9444vw;
+    font-size: 6vw;
+    font-weight: 500;
+    text-align: center;
+}
+
+.rentCon .benefit ul li {
+    height: 80vw;
+    margin-bottom: 12vw;
+}
+
+.rentCon .benefit ul li img {
+    display: block;
+    margin: auto;
+    width: 78.3333vw;
+    height: 58.3333vw;
+}
+
+.rentCon .benefit ul li p {
+    margin-top: 2.7778vw;
+    color: gray;
+    font-size: 4.4444vw;
+    margin-left: 10vw;
+}
+
+.rentCon .benefit ul li span {
+    margin-top: 2.7778vw;
+    font-size: 5.0000vw;
+    font-weight: 500;
+    margin-left: 10vw;
+}
+
+/* // rent */
+/* // rent */
+/* // rent */
+/* // rent */
+/* // rent */
