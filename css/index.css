@@ -842,12 +842,12 @@
 
 .main .best-goods .goods-view li .badge span {
     display: block;
-    padding-top: 20px;
+    padding-top: 16px;
 }
 
 .main .best-goods .goods-view li .badge em {
     display: block;
-    font-size: 28px;
+    font-size: 24px;
     line-height: 20px;
 }
 
@@ -864,6 +864,7 @@
 }
 
 .main .best-goods .goods-view .goods-rentcar .first {
+    background-size: 75%;
     background-image: url(../images/main/contents/img_best_ren01.jpg);
 }
 
@@ -872,6 +873,7 @@
 }
 
 .main .best-goods .goods-view .goods-rentcar .third {
+    background-size: 85%;
     background-image: url(../images/main/contents/img_best_ren03.jpg);
 }
 
