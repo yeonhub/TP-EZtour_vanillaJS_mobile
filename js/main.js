@@ -18,6 +18,7 @@ function package_m(){
         })
     })
     
+    
     //search 출발일
     const packV_search_go = document.querySelector(".packVis .packV_search .go");
     const packV_search_go_txt = document.querySelector(".packVis .packV_search .go span");
