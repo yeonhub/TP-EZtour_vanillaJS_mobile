@@ -1,0 +1,755 @@
+#wrap {
+    width: 100%;
+}
+
+.inner {
+    width: 95%;
+    margin: auto;
+    position: relative;
+    box-sizing: border-box;
+}
+/* hotel */
+/* hotel */
+/* hotel */
+/* hotel */
+/* hotel */
+.airportVis img,
+.airportCon img,
+.hotelVis img,
+.hotelCon img,
+.rentVis img,
+.rentCon img {
+    vertical-align: baseline;
+}
+/* hotel visual */
+.hotelVis {
+    position: relative;
+    width: 100%;
+    height: 100vw;
+    text-align: center;
+}
+
+.hotelVis .viss {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}
+
+.hotelVis .viss img {
+    width: 100%;
+    height: 166.6667vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hotelVis .inner {
+    position: relative;
+    height: 80vw;
+}
+
+.hotelVis .bgibox {
+    position: absolute;
+    width: 100%;
+    transition: 0.4s;
+}
+.hotelVis .box1 {
+    background-image: url(../images/hotel/visual/visual1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+}
+.hotelVis .box1::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30vw;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+}
+
+/* hotel search */
+.hotelVis .inner .search {
+    position: absolute;
+    width: 95vw;
+    height: 66.1111vw;
+    background: white;
+    top: 10%;
+    bottom: 5.5556vw;
+    box-sizing: border-box;
+    box-shadow: 0.0000vw 0.0000vw 2.7778vw;
+    padding: 5.5556vw;
+    text-align: left;
+    z-index: 5;
+    border-radius: 7vw;
+}
+
+.hotelVis .inner .search .way {
+    text-align: left;
+}
+
+.hotelVis .inner .search .way strong {
+    margin-right: 5.5556vw;
+    margin-left: 2.7778vw;
+    font-size: 5.0000vw;
+    cursor: pointer;
+}
+
+.hotelVis .inner .search {
+    text-align: left;
+}
+
+.hotelVis .inner .search .where {
+    margin-top: 5.5556vw;
+    margin-bottom: 2.7778vw;
+}
+
+.hotelVis .inner .search .where span,
+.hotelVis .inner .search .when span {
+    display: inline-block;
+    width: 27.7778vw;
+    height: 13.8889vw;
+    padding: 2.7778vw;
+    color: gray;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.hotelVis .inner .search .where .start,
+.hotelVis .inner .search .where .end,
+.hotelVis .inner .search .when .pers {
+    width: 50vw;
+    cursor: pointer;
+}
+
+.hotelVis .inner .search .where i {
+    vertical-align: -40%;
+    font-size: 13.8889vw;
+    margin-right: 5.5556vw;
+}
+
+.hotelVis .inner .search .when .start_date,
+.hotelVis .inner .search .when .end_date {
+    width: 40vw;
+}
+
+.hotelVis .inner .search .when .pers {
+    width: 60vw;
+}
+
+.hotelVis .inner .search .serch_btn {
+    margin-top: 15vw;
+    width: 100%;
+    height: 13.8889vw;
+    border-radius: 2.7778vw;
+    background: skyblue;
+    color: white;
+    border: none;
+    font-size: 5.0000vw;
+    cursor: pointer;
+}
+
+/* hotel popup */
+.hotelVis .inner .search .popWhereBox {
+    position: absolute;
+    overflow: hidden;
+    z-index: -10;
+    width: 100%;
+    height: 0.0000vw;
+    top: 25.0000vw;
+    left: 0vw;
+    box-sizing: border-box;
+}
+
+.hotelVis .inner .search .popWhere {
+    position: absolute;
+    background: white;
+    border: 0.2778vw solid #000;
+    width: 100%;
+    height: 155vw;
+    top: -130.5556vw;
+    left: 0.0000vw;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.hotelVis .inner .search .popWhere ul li:nth-child(1),
+.hotelVis .inner .search .popWhere ul li:nth-child(6) {
+    font-weight: 600;
+    width: 100%;
+}
+
+.hotelVis .inner .search .popWhere p,
+.hotelVis .inner .search .popDes p,
+.hotelVis .inner .search .popPer p {
+    margin: 2.7778vw;
+    text-align: right;
+}
+
+.hotelVis .inner .search .popWhere p i,
+.hotelVis .inner .search .popDes p i,
+.hotelVis .inner .search .popPer p i {
+    font-size: 8.3333vw;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.hotelVis .inner .search .popWhere p i:hover,
+.hotelVis .inner .search .popDes p i:hover,
+.hotelVis .inner .search .popPer p i:hover {
+    transform: rotate(90deg);
+    color: red;
+}
+
+.hotelVis .inner .search .popWhere ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space;
+    margin: 8.3333vw;
+    margin-top: 4.1667vw;
+    padding-top: 4.1667vw;
+    border-top: 0.2778vw solid gray;
+}
+
+.hotelVis .inner .search .popWhere li {
+    text-align: center;
+    margin: 2.2222vw 3.3333vw;
+    padding: 1.3889vw;
+    width: 13.8889vw;
+    height: 13.8889vw;
+    font-size: 5.0000vw;
+    cursor: pointer;
+}
+
+.hotelVis .inner .search .popWhere li:hover {
+    text-decoration: underline;
+}
+
+.hotelVis .inner .search .popPerBox {
+    position: absolute;
+    overflow: hidden;
+    z-index: -10;
+    width: 100%;
+    height: 0vw;
+    top: 60vw;
+    left: 0vw;
+    box-sizing: border-box;
+}
+
+.hotelVis .inner .search .popPer {
+    position: absolute;
+    background: white;
+    border: 0.2778vw solid #000;
+    width: 100%;
+    height: 83.3333vw;
+    top: -83.3333vw;
+    left: 0.0000vw;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.hotelVis .inner .search .popPer ul {
+    position: relative;
+    margin: 8.3333vw;
+    margin-top: 4.1667vw;
+    padding-top: 4.1667vw;
+    border-top: 0.2778vw solid gray;
+}
+
+.hotelVis .inner .search .popPer ul li {
+    height: 19.4444vw;
+}
+
+.hotelVis .inner .search .popPer ul li .pers {
+    position: absolute;
+    display: inline-block;
+    right: 0;
+}
+
+.hotelVis .inner .search .popPer ul li span {
+    font-size: 5.0000vw;
+}
+
+.hotelVis .inner .search .popPer ul li span em {
+    font-size: 3.8889vw;
+    color: gray;
+    margin-left: 1.3889vw;
+}
+
+.hotelVis .inner .search .popPer ul li .min,
+.hotelVis .inner .search .popPer ul li .plus {
+    background: white;
+}
+
+.hotelVis .inner .search .popPer ul i {
+    font-size: 5.0000vw;
+    margin-left: 1.3889vw;
+    cursor: pointer;
+}
+
+.hotelVis .inner .search .popPer ul li button {
+    border: none;
+    margin: 1.3889vw;
+}
+
+.hotelVis .inner .search .popPer ul li strong {
+    font-size: 6.1111vw;
+    font-weight: 600;
+}
+
+/* hotel calendal */
+.hotelVis .inner .search .popDateBox {
+    position: absolute;
+    overflow: hidden;
+    z-index: -10;
+    width: 100%;
+    height: 0.0000vw;
+    top: 50.0000vw;
+    left: 0vw;
+    box-sizing: border-box;
+    padding: 5.5556vw;
+}
+
+.hotelVis .inner .search .popDateBox .popDateBox1 {
+    position: absolute;
+    background: white;
+    border: 0.2778vw solid #000;
+    width: 100%;
+    height: 115vw;
+    top: -133.3333vw;
+    left: 0.0000vw;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.hotelVis .inner .search .popDateBoxR {
+    position: absolute;
+    overflow: hidden;
+    z-index: -10;
+    width: 100%;
+    height: 0.0000vw;
+    top: 50.0000vw;
+    left: 0vw;
+    box-sizing: border-box;
+    padding: 5.5556vw;
+}
+
+.hotelVis .inner .search .popDateBoxR .popDateBox1 {
+    position: absolute;
+    background: white;
+    border: 0.2778vw solid #000;
+    width: 100%;
+    height: 115vw;
+    top: -133.3333vw;
+    left: 0.0000vw;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.hotelVis .inner .search .popDateBoxO {
+    position: absolute;
+    overflow: hidden;
+    z-index: -10;
+    width: 100%;
+    height: 0.0000vw;
+    top: 50.0000vw;
+    left: 0vw;
+    box-sizing: border-box;
+    padding: 5.5556vw;
+}
+
+.hotelVis .inner .search .popDateBoxO .popDateBox1 {
+    position: absolute;
+    background: white;
+    border: 0.2778vw solid #000;
+    width: 100%;
+    height: 133.3333vw;
+    top: -133.3333vw;
+    left: 0.0000vw;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.hotelVis .inner .search .popDate {
+    padding-left: 2vw;
+}
+
+.hotelVis .inner .search .popDateBox1 .popDate {
+    display: flex;
+    align-items: flex-start;
+}
+
+.hotelVis .inner .search .popDateBox1>p {
+    margin: 2.7778vw;
+    margin-bottom: 5.5556vw;
+    text-align: right;
+}
+
+.hotelVis .inner .search .popDateBox1>p i {
+    font-size: 8.3333vw;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.hotelVis .inner .search .popDate td {
+    width: 5vw;
+    height: 5vw;
+    vertical-align: top;
+}
+
+.hotelVis .inner .search .popDate .popDateS {
+    width: 97.2222vw;
+    height: auto;
+    margin-right: 11.1111vw;
+}
+
+.hotelVis .inner .search .popDate table {
+    text-align: center;
+}
+
+.hotelVis .inner .search .popDate table i {
+    font-size: 9.4444vw;
+}
+
+.hotelVis .inner .search .popDate table thead tr:first-child td {
+    font-weight: bold;
+    font-size: 6.1111vw;
+}
+
+.hotelVis .inner .search .popDate table thead tr:last-child td {
+    font-weight: bold;
+    font-size: 5.0000vw;
+}
+
+.hotelVis .inner .search .popDate table tbody>tr>td>p {
+    height: 11vw;
+    width: 11vw;
+    border-radius: 12.5000vw;
+    transition-duration: 0.2s;
+    line-height: 12.5000vw;
+    margin: 0.6944vw;
+    display: block;
+    text-align: center;
+}
+
+.hotelVis .inner .search .popDate table .pastDay {
+    color: lightgray;
+}
+
+.hotelVis .inner .search .popDate table .today {
+    background: tan;
+    color: white;
+}
+
+.hotelVis .inner .search .popDate table .futureDay {
+    background: white;
+}
+
+.hotelVis .inner .search .popDate table .futureDay:hover {
+    background: lightgray;
+}
+
+.hotelVis .inner .search .popDate table .futureDay.choiceDay,
+.hotelVis .inner .search .popDate table .today.choiceDay {
+    background: orange;
+    color: white;
+}
+
+/* // hotel visual */
+
+/* hotel content */
+.hotelCon .inner {
+    height: 140vw;
+    box-sizing: border-box;
+}
+
+.hotelCon .inner h3 {
+    font-size: 6vw;
+    text-align: center;
+    margin-bottom: 5vw;
+}
+
+
+.hotelCon .hotel .inner h3 .xi-hotel {
+    margin-left: 2.7778vw;
+}
+
+.hotelCon .hotel .hotel_recomend-box {
+    display: flex;
+}
+
+.hotelCon .hotel .hotel_recomend-box li {
+    position: relative;
+    border-radius: 2.7778vw;
+    box-sizing: border-box;
+    padding: 5.5556vw;
+    margin-bottom: 5vw;
+}
+
+.hotelCon .hotel .hotel_recomend-box li img {
+    width: 72.2222vw;
+    height: 58.3333vw;
+    display: block;
+    margin: 0 auto;
+    border-radius: 2.7778vw;
+}
+
+.hotelCon .hotel .hotel_recomend-box li .hotel_type {
+    display: block;
+    margin-top: 5.5556vw;
+    margin-bottom: 1.3889vw;
+    color: gray;
+    margin-left: 6vw;
+}
+
+.hotelCon .hotel .hotel_recomend-box li strong {
+    display: block;
+    font-size: 6.1111vw;
+    font-weight: 600;
+    margin-bottom: 2.7778vw;
+    margin-left: 6vw;
+}
+
+.hotelCon .hotel .hotel_recomend-box li .hotel_price {
+    font-size: 4.4444vw;
+    color: gray;
+    text-decoration: line-through;
+    margin-left: 6vw;
+}
+
+.hotelCon .hotel .hotel_recomend-box li p {
+    margin-top: 1.3889vw;
+    font-size: 6.6667vw;
+    font-weight: 700;
+    margin-left: 6vw;
+}
+
+.hotelCon .hotel .hotel_recomend-box li p em {
+    color: orangered;
+    margin-right: 2.7778vw;
+}
+
+.hotelCon .hotel .hotel_recomend-box li p>span {
+    font-size: 4.1667vw;
+    font-weight: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hotelCon .icon .inner {
+    height: 120vw;
+}
+
+.hotelCon .icon .inner ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.hotelCon .icon .inner ul li {
+    width: 20vw;
+    height: 25vw;
+}
+
+.hotelCon .icon .inner ul li img {
+    width: 16.6667vw;
+    height: 16.6667vw;
+}
+
+.hotelCon .icon .inner ul li p {
+    text-align: center;
+    font-size: 3.5vw;
+}
+
+
+
+
+
+
+
+
+
+
+.hotelCon .jeju .inner {
+    height: 170vw;
+    position: relative;
+}
+
+.hotelCon .jeju {
+}
+
+.hotelCon .jeju .inner .jeju_hotel,
+.hotelCon .jeju .inner .seogwipo_hotel {
+    width: 100%;
+    margin: auto;
+}
+/* .hotelCon .jeju .inner .jeju_hotel .img {
+    width: 100%;
+} */
+
+.hotelCon .jeju .inner .jeju_hotel .img .logo,
+.hotelCon .jeju .inner .seogwipo_hotel .img .logo {
+    display: block;
+    width: 50vw;
+    margin: 0 auto;
+}
+
+
+.hotelCon .jeju .inner .jeju_hotel .img .maps img,
+.hotelCon .jeju .inner .seogwipo_hotel .img .maps img {
+    width: 70vw;
+    margin: 0 auto;
+    display: none;
+}
+
+.hotelCon .jeju .inner .jeju_hotel .img .maps img:nth-of-type(1),
+.hotelCon .jeju .inner .seogwipo_hotel .img .maps img:nth-of-type(1) {
+    display: block;
+}
+
+.hotelCon .jeju .jeju_hotel .jeju_boxout,
+.hotelCon .jeju .seogwipo_hotel .seogwipo_boxout {
+    width: 100%;
+    position: relative;
+}
+
+.hotelCon .jeju .jeju_hotel .jeju_boxout .jeju_box,
+.hotelCon .jeju .seogwipo_hotel .seogwipo_boxout .seogwipo_box {
+    width: 100%;
+}
+
+
+.hotelCon .jeju .jeju_hotel .hotel_recomend-box li,
+.hotelCon .jeju .seogwipo_hotel .hotel_recomend-box li {
+    height: 90vw;
+    /* margin-bottom: 30vw; */
+}
+.hotelCon .jeju .jeju_hotel .hotel_recomend-box li img,
+.hotelCon .jeju .seogwipo_hotel .hotel_recomend-box li img {
+    width: 67vw;
+    display: block;
+    margin: 0 auto;
+    border-radius: 2.7778vw;
+}
+
+.hotelCon .jeju .jeju_hotel .hotel_recomend-box li .hotel_type,
+.hotelCon .jeju .seogwipo_hotel .hotel_recomend-box li .hotel_type {
+    display: block;
+    margin-top: 5.5556vw;
+    margin-bottom: 1.3889vw;
+    color: gray;
+    margin-left: 14vw;
+}
+
+.hotelCon .jeju .jeju_hotel .hotel_recomend-box li strong,
+.hotelCon .jeju .seogwipo_hotel .hotel_recomend-box li strong {
+    font-size: 5.0000vw;
+    font-weight: 600;
+    margin-bottom: 2.7778vw;
+    margin-left: 14vw;
+}
+
+.hotelCon .jeju .jeju_hotel .hotel_recomend-box li .hotel_price,
+.hotelCon .jeju .seogwipo_hotel .hotel_recomend-box li .hotel_price {
+    font-size: 4.4444vw;
+    color: gray;
+    text-decoration: line-through;
+    margin-left: 14vw;
+}
+
+.hotelCon .jeju .jeju_hotel .hotel_recomend-box li p,
+.hotelCon .jeju .seogwipo_hotel .hotel_recomend-box li p {
+    position: absolute;
+    margin-top: 1.3889vw;
+    font-size: 5.5556vw;
+    font-weight: 700;
+    display: inline-block;
+    text-align: right;
+    right: 16vw;
+}
+
+.hotelCon .jeju .jeju_hotel .hotel_recomend-box li p>span,
+.hotelCon .jeju .seogwipo_hotel .hotel_recomend-box li p>span {
+    font-size: 4.1667vw;
+    font-weight: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* hotel benefit */
+.hotelCon .benefit {
+    margin-top: 10px;
+    height: 140vw;
+    background: lightgoldenrodyellow;
+}
+
+.hotelCon .benefit h3 {
+    padding-top: 13.8889vw;
+    margin-bottom: 11.9444vw;
+    font-size: 6vw;
+    font-weight: 500;
+    text-align: center;
+}
+
+.hotelCon .benefit ul li {
+    height: 80vw;
+    margin-bottom: 12vw;
+}
+
+.hotelCon .benefit ul li img {
+    display: block;
+    margin: auto;
+    width: 78.3333vw;
+    height: 58.3333vw;
+}
+
+.hotelCon .benefit ul li p {
+    margin-top: 2.7778vw;
+    color: gray;
+    font-size: 4.4444vw;
+    margin-left: 10vw;
+}
+
+.hotelCon .benefit ul li span {
+    margin-top: 2.7778vw;
+    font-size: 5.0000vw;
+    font-weight: 500;
+    margin-left: 10vw;
+}
+
+/* // hotel */
+/* // hotel */
+/* // hotel */
+/* // hotel */
+/* // hotel */
