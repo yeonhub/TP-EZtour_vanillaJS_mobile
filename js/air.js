@@ -4,6 +4,7 @@ function air() {
     const get = (target) => document.querySelector(target);
     const getAll = (target) => document.querySelectorAll(target);
 
+    
     // search
     let $roundBtn = get('.airportVis .inner .search .way .roundBtn')
     let $oneBtn = get('.airportVis .inner .search .way .oneBtn')

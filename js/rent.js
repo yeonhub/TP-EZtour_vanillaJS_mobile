@@ -11,6 +11,7 @@ function rent() {
     let R_cnt = 0;
     let R_old = 0;
     let R_timer = null;
+    
     let R_isPlay = true;
 
     // vis popup
