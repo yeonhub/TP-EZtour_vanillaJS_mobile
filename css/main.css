@@ -1,0 +1,667 @@
+#wrap {
+    width: 100%;
+}
+
+.inner {
+    width: 95%;
+    margin: auto;
+    position: relative;
+    box-sizing: border-box;
+}
+
+/* package.html */
+
+.packVis {
+    background-image: url(../images/package_m/pac_main_bg.jpg);
+    background-position: 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 61.1111vw;
+    padding-top: 2.7778vw;
+}
+
+.packVis .packV_search {
+    margin: auto;
+    border-radius: 2.7778vw;
+    background: rgba(255, 255, 255, 0.5);
+    width: 86.1111vw;
+    height: 44.4444vw;
+}
+
+.packVis .packV_search ul {
+    padding: 2.7778vw 8.3333vw;
+}
+
+.packVis .packV_search ul li {
+    display: flex;
+    justify-content: space-between;
+    height: 11.1111vw;
+    margin-bottom: 2.7778vw;
+}
+
+.packVis .packV_search ul li strong {
+    font-size: 5.0000vw;
+    font-weight: 700;
+    line-height: 11.1111vw;
+    text-align: center;
+    width: 13.8889vw;
+}
+
+.packVis .packV_search ul li div {
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    width: 50.0000vw;
+    line-height: 11.1111vw;
+    padding: 0.0000vw 2.7778vw;
+    border-radius: 2.7778vw;
+    box-sizing: border-box;
+}
+
+.packVis .packV_search ul li div span {
+    color: #999;
+}
+
+.packVis .packV_search ul li div i {
+    line-height: 11.1111vw;
+    color: #999;
+}
+
+.packVis .btt {
+    border: none;
+    border-radius: 3.8889vw;
+    background: #1288AC;
+    width: 61.1111vw;
+    height: 11.1111vw;
+    display: block;
+    margin: 2.7778vw auto;
+    color: #fff;
+    font-size: 5.0000vw;
+    font-weight: 600;
+    line-height: 11.1111vw;
+}
+
+.packVis .btt i {
+    margin-right: 2.7778vw;
+}
+
+.packVis .packV_search ul li .go i,
+.packVis .packV_search ul li .date i,
+.packVis .packV_search ul li .people i {
+    font-size: 5.0000vw;
+    color: black;
+    transition: all 0.3s linear;
+}
+
+.packVis .packV_spop_go {
+    background: #fff;
+    width: 100%;
+    box-shadow: 0.0000vw 0.0000vw 1.3889vw black;
+    text-align: center;
+    position: absolute;
+    left: 0.0000vw;
+    top: 16.6667vw;
+    overflow: hidden;
+    z-index: 10;
+    transition: all linear 0.2s;
+    border-radius: 5.5556vw;
+    height: 0;
+}
+
+
+.packVis .packV_spop_go td {
+    width: 13.8889vw;
+    height: 13.8889vw;
+}
+
+.packVis .packV_spop_go .packV_calendar thead tr:first-child td {
+    font-weight: bold;
+    padding-top: 8.3333vw;
+    font-size: 5.5556vw;
+}
+
+.packVis .packV_spop_go .packV_calendar thead tr:last-child td {
+    font-weight: bold;
+    font-size: 5.0000vw;
+}
+
+.packVis .packV_spop_go .packV_calendar tbody tr td p {
+    height: 11.1111vw;
+    width: 11.1111vw;
+    border-radius: 50%;
+    transition-duration: 0.2s;
+    line-height: 11.1111vw;
+    margin: 0.5556vw;
+    display: block;
+    text-align: center;
+    font-size: 5.0000vw;
+}
+
+.packVis .packV_spop_go .packV_calendar .pastDay {
+    color: #999;
+}
+
+.packVis .packV_spop_go .packV_calendar .pack_today {
+    background-color: #eecd49;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.packVis .packV_spop_go .packV_calendar .futureDay {
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+.packVis .packV_spop_go .packV_calendar .futureDay:hover {
+    background: #eee;
+}
+
+.packVis .packV_spop_go .packV_calendar .futureDay.pack_choiceDay,
+.packVis .packV_spop_go .packV_calendar .today.pack_choiceDay {
+    background-color: #1288AC;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+.packVis .packV_spop_date {
+    z-index: 20;
+    position: absolute;
+    left: 35%;
+    top: 30.5556vw;
+    background: #fff;
+    width: 50.0000vw;
+    overflow: hidden;
+    transition: all linear 0.2s;
+    box-shadow: 0.0000vw 0.0000vw 1.3889vw black;
+    border-radius: 2.7778vw;
+    height: 0;
+}
+
+.packVis .packV_spop_date li {
+    position: relative;
+    cursor: pointer;
+    line-height: 11.1111vw;
+    padding-left: 4.1667vw;
+    z-index: 20;
+    font-size: 4.4444vw;
+
+}
+
+.packVis .packV_spop_date li::after {
+    content: "";
+    background: lightgray;
+    width: 47.2222vw;
+    height: 0.2778vw;
+    display: block;
+    position: absolute;
+    left: 1.3889vw;
+    top: 11.1111vw;
+}
+
+.packVis .packV_spop_date li:last-child::after {
+    display: none;
+}
+
+.packVis .packV_spop_people {
+    z-index: 20;
+    position: absolute;
+    left: 35%;
+    top: 44.4444vw;
+    background: #fff;
+    width: 50.0000vw;
+    height: 0.0000vw;
+    line-height: 13.8889vw;
+    padding-left: 4.1667vw;
+    overflow: hidden;
+    transition: all linear 0.2s;
+    box-shadow: 0.0000vw 0.0000vw 1.3889vw black;
+    box-sizing: border-box;
+    border-radius: 2.7778vw;
+}
+
+.packVis .packV_spop_people p {
+    position: relative;
+}
+
+.packVis .packV_spop_people p em {
+    color: black;
+}
+
+.packVis .packV_spop_people .ol,
+.packVis .packV_spop_people .yo {
+    padding: 0.0000vw 1.3889vw;
+}
+
+.packVis .packV_spop_people .packV_btn_o {
+    cursor: pointer;
+    border: none;
+    vertical-align: middle;
+}
+
+.packVis .packV_spop_people .packV_btn_o_prev,
+.packVis .packV_spop_people .packV_btn_y_prev {
+    margin-left: 8.3333vw;
+}
+
+.packVis .packV_spop_people .packV_btn_o i {
+    font-size: 5.0000vw;
+}
+
+.packVis .packV_spop_people .packV_btn_y {
+    cursor: pointer;
+    border: none;
+    vertical-align: middle;
+}
+
+.packVis .packV_spop_people .packV_btn_y i {
+    font-size: 5.0000vw;
+}
+
+.packVis .packV_spop_people p:first-child::after {
+    content: "";
+    background: lightgray;
+    width: 66.6667vw;
+    height: 0.2778vw;
+    display: block;
+    position: absolute;
+    left: -2.7778vw;
+    top: 13.8889vw;
+}
+
+
+#packbanner .kakaobanner {
+    margin: 2.7778vw 0.0000vw;
+    width: 100%;
+    height: 19.4444vw;
+    background-image: url(../images/package_m/kakao.png);
+    background-position: 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#packbanner .pack_aside_banner {
+    margin: 2.7778vw 0.0000vw;
+}
+
+.packCon .packmain_banner .packmain_banner_roll .swiper-slide {
+    height: 63.8889vw;
+}
+
+.packCon .packmain_banner .packmain_banner_roll .swiper-slide img {
+    border-radius: 50%;
+    width: 61.1111vw;
+    height: 61.1111vw;
+    display: inline-block;
+    position: relative;
+    box-shadow: 0.0000vw 0.5556vw 1.1111vw #999;
+
+}
+
+.packCon .packmain_banner .packmain_banner_roll .swiper-slide a span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    font-size: 6.1111vw;
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 0.0000vw 0.0000vw 2.7778vw black;
+}
+
+.packCon .txt {
+    text-align: center;
+    margin: 11.1111vw 0.0000vw 5.5556vw 0.0000vw;
+}
+
+.packCon .txt strong {
+    display: inline-block;
+    border: 0.2778vw solid skyblue;
+    color: skyblue;
+    padding: 1.6667vw 3.3333vw;
+    border-radius: 5.5556vw;
+    margin-bottom: 3.8889vw;
+    font-weight: 500;
+}
+
+.packCon .txt h2 {
+    font-size: 6.6667vw;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.packCon .txt h2 span {
+    color: red;
+}
+
+.packCon .packmain .packmain_con {}
+
+.packCon .packmain .packmain_con .main_btn {
+    text-align: center;
+    margin-bottom: 2.7778vw;
+}
+
+.packCon .packmain .packmain_con .main_btn .btn {
+    margin-bottom: 11.1111vw;
+    font-size: 5.0000vw;
+    height: 11.1111vw;
+    line-height: 11.1111vw;
+    font-weight: 600;
+    width: 27.7778vw;
+    display: inline-block;
+}
+
+.packCon .packmain .packmain_con .main_btn .btn.on {
+    background: skyblue;
+    border-radius: 5.5556vw;
+    color: #fff;
+}
+
+.packCon .packmain .packmain_con .main_btn em {
+    font-size: 5.0000vw;
+    padding: 0.0000vw 2.7778vw;
+}
+
+.packCon .packmain .packmain_con .packmain_info {
+    position: relative;
+}
+
+.packCon .packmain .packakegmain {
+    position: relative;
+}
+
+.packCon .packmain .packakegmain .info_bg {
+    background: #D8F1F1;
+    width: 100%;
+    height: 55.5556vw;
+    position: absolute;
+    left: 0.0000vw;
+    top: -8.3333vw;
+}
+
+.packCon .packmain .packmain_con .packmain_info {
+    display: none;
+}
+
+.packCon .packmain .packmain_con .packmain_info.on {
+    display: block;
+}
+
+.packCon .packmain .packmain_con .packmain_info .swiper-slide {
+    text-align: left;
+    border-radius: 5.5556vw;
+    box-shadow: 0.5556vw 0.5556vw 1.6667vw #ccc;
+    margin-bottom: 5.5556vw;
+}
+
+.packCon .packmain .packmain_con .packmain_info .swiper-slide img {
+    border-radius: 5.5556vw 5.5556vw 0.0000vw 0.0000vw;
+    width: 100%;
+    height: 47.2222vw;
+}
+
+.packCon .packmain .packmain_con .packmain_info .swiper-slide strong {
+    display: block;
+    font-size: 6.1111vw;
+    padding: 2.2222vw 2.2222vw 0.0000vw;
+    font-weight: 600;
+}
+
+.packCon .packmain .packmain_con .packmain_info .swiper-slide em {
+    display: block;
+    padding: 0.0000vw 2.2222vw;
+    font-size: 4.4444vw;
+}
+
+.packCon .packmain .packmain_con .packmain_info .swiper-slide b {
+    display: block;
+    text-align: right;
+    padding-right: 4.1667vw;
+    margin-bottom: 2.7778vw;
+}
+
+.packCon .packmain .packmain_con .packmain_info .swiper-slide b span {
+    color: tomato;
+    font-size: 5.5556vw;
+}
+
+.packCon .packmain .packmain_con .packakegmain .more,
+.tourMain .con .more {
+    text-align: center;
+    font-size: 6.1111vw;
+    font-weight: 700;
+    margin-bottom: 11.1111vw;
+}
+
+.packCon .packmain .packmain_con .packakegmain .more a,
+.tourMain .con .more a {
+    color: #1288AC;
+
+}
+
+.packCon .packmain .packmain_con .packakegmain .more a i,
+.tourMain .con .more a i {
+    vertical-align: middle;
+
+}
+
+/* tour */
+#tourNav {}
+
+#tourNav .tour_btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+#tourNav .tour_btn strong {
+    display: inline-block;
+    text-align: center;
+    padding: 3.8889vw 5.0000vw;
+    font-weight: 600;
+    font-size: 4.1667vw;
+}
+
+#tourNav .tour_btn strong.on {
+    background: #1288AC;
+    color: #fff;
+}
+
+#tourVis {}
+
+#tourVis .tourVis_bg {
+    width: 100%;
+    background: #1288AC;
+    height: 67.7778vw;
+    margin-bottom: 5.5556vw;
+}
+
+#tourVis .tourVis_bg .search input {
+    border: none;
+    border-radius: 2.7778vw;
+    padding: 2.7778vw 13.8889vw 2.7778vw 4.4444vw;
+    font-size: 4.4444vw;
+    margin: 3.8889vw 0.0000vw;
+    width: 94.4444vw;
+    height: 13.8889vw;
+    box-sizing: border-box;
+}
+
+#tourVis .tourVis_bg .search i {
+    position: absolute;
+    right: 5.5556vw;
+    top: 7.7778vw;
+    font-size: 5.5556vw;
+}
+
+#tourVis .tourVis_bg .tourVis_roll {}
+
+#tourVis .tourVis_bg .tourVis_roll .swiper-wrapper .swiper-slide {
+    border-radius: 2.7778vw;
+}
+
+#tourVis .tourVis_bg .tourVis_roll .swiper-wrapper .swiper-slide img {
+    border-radius: 2.7778vw;
+}
+
+ .tour_pack_sale {
+    padding: 2.7778vw 0.0000vw 5.5556vw;
+    background-position: 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../images/tour_m/bbn_bg.jpg);
+    width: 100%;
+    height: 50.0000vw;
+    margin-bottom: 11.1111vw;
+}
+
+ .tour_pack_sale h3,
+.tourMain .con-box h2 {
+    font-size: 6.6667vw;
+    font-weight: 700;
+    text-align: center;
+    margin: 2.7778vw 0.0000vw;
+}
+
+#tourVis .tour_packtour_roll {}
+
+#tourVis .tour_packtour_roll .swiper-slide {
+    border-radius: 2.7778vw;
+}
+
+#tourVis .tour_packtour_roll .swiper-slide img {
+    border-radius: 2.7778vw;
+}
+
+.tourMain .con-box h2 span {
+    color: red;
+}
+
+.tourMain .con-box h2 {
+    margin: 2.7778vw 0.0000vw 13.8889vw 0.0000vw;
+}
+
+
+.tourMain .con-box .con .inner {
+    text-align: center;
+}
+
+.tourMain .con-box .con .inner>strong {
+    display: inline-block;
+    /* margin-top: 11.1111vw; */
+    border: 0.2778vw solid skyblue;
+    color: skyblue;
+    padding: 1.6667vw 3.3333vw;
+    border-radius: 5.5556vw;
+    font-weight: 500;
+}
+
+.tourMain .con-box .con .tour_main {}
+
+.tourMain .con-box .con .tour_main .swiper-wrapper {}
+
+.tourMain .con-box .con .tour_main .swiper-wrapper .swiper-slide {
+    text-align: left;
+    border-radius: 5.5556vw;
+    box-shadow: 0.5556vw 0.5556vw 1.6667vw #ccc;
+    margin-bottom: 5.5556vw;
+}
+
+.tourMain .con-box .con .tour_main .swiper-wrapper .swiper-slide img {
+    border-radius: 5.5556vw 5.5556vw 0.0000vw 0.0000vw;
+    width: 100%;
+    height: 47.2222vw;
+}
+
+.tourMain .con-box .con .tour_main .swiper-wrapper .swiper-slide strong {
+    padding: 2.2222vw 2.2222vw 0.0000vw;
+    display: block;
+    font-size: 6.1111vw;
+    font-weight: 600;
+}
+
+.tourMain .con-box .con .tour_main .swiper-wrapper .swiper-slide em {
+    display: block;
+    padding: 0.0000vw 2.2222vw;
+    font-size: 4.4444vw;
+    /* color: #999; */
+}
+
+.tourMain .con-box .con .tour_main .swiper-wrapper .swiper-slide em:nth-of-type(2) {
+    color: #999;
+}
+
+.tourMain .con-box .con .tour_main .swiper-wrapper .swiper-slide em b {
+    color: red;
+}
+
+.tourMain .con-box .con .tour_main .swiper-wrapper .swiper-slide em span {}
+
+.tourMain .con-box .con .tour_main .swiper-wrapper .swiper-slide>b {
+    font-size: 4.4444vw;
+    display: block;
+    text-align: right;
+    padding-right: 4.1667vw;
+    margin-bottom: 2.7778vw;
+}
+
+.tourMain .con-box .con .tour_main .swiper-wrapper .swiper-slide>b span {
+    color: red;
+    font-size: 5.5556vw;
+    font-weight: 600
+}
+
+.tourMain .con-box .con {
+    position: relative;
+}
+
+.tourMain .con-box .con .tinfo_bg {
+    background: #D8F1F1;
+    width: 100%;
+    height: 55.5556vw;
+    position: absolute;
+    left: 0.0000vw;
+    top: 28.0556vw;
+}
+
+#tourVis .tourVis_roll .swiper-button-prev,
+#tourVis .tourVis_roll .swiper-rtl .swiper-button-next {
+    left: 36.1111vw;
+    right: auto;
+    top: auto;
+    bottom: -1.1111vw;
+}
+
+#tourVis .tourVis_roll .swiper-button-next,
+#tourVis .tourVis_roll .swiper-rtl .swiper-button-prev {
+    right: 36.1111vw;
+    left: auto;
+    top: auto;
+    bottom: -1.1111vw;
+}
+
+#packbanner .pack_aside_banner_roll .swiper-pagination-bullet-active,
+#tourVis .tour_packtour_roll .swiper-pagination-bullet-active {
+    background: #1288AC;
+}
+
+ .tour_pack_sale .tour_packtour_roll {
+    overflow: visible;
+}
+
+ .tour_pack_sale .tour_packtour_roll .swiper-pagination {
+    position: absolute;
+    left: 0;
+    bottom: -6.6667vw;
+}
+
+#tourVis .tourVis_roll .swiper-button-next,
+#tourVis .tourVis_roll .swiper-button-prev {
+    color: #1288AC;
+}
+#tourVis .tourVis_roll .swiper-button-next::after,#tourVis .tourVis_roll .swiper-button-prev::after{
+    font-size: 5.5556vw; font-weight: 700;
+} 
