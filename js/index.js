@@ -198,8 +198,8 @@ mainVisualSelectTabLi.forEach((element, idx) => {
 })
 
 let nowMonth = new Date();  // 현재 달을 페이지를 로드한 날의 달로 초기화
-let today = new Date();     // 페이지를 로드한 날짜를 저장
-today.setHours(0, 0, 0, 0);    // 비교 편의를 위해 today의 시간을 초기화
+let main_today = new Date();     // 페이지를 로드한 날짜를 저장
+main_today.setHours(0, 0, 0, 0);    // 비교 편의를 위해 today의 시간을 초기화
 
 buildCalendar();
 buildCalendar_Air();
@@ -241,10 +241,10 @@ function buildCalendar() {
             nowRow = tbody_Calendar.insertRow();    // 새로운 행 추가
         }
 
-        if (nowDay < today) {                       // 지난날인 경우
+        if (nowDay < main_today) {                       // 지난날인 경우
             newDIV.className = "pastDay";
         }
-        else if (nowDay.getFullYear() == today.getFullYear() && nowDay.getMonth() == today.getMonth() && nowDay.getDate() == today.getDate()) { // 오늘인 경우           
+        else if (nowDay.getFullYear() == main_today.getFullYear() && nowDay.getMonth() == main_today.getMonth() && nowDay.getDate() == main_today.getDate()) { // 오늘인 경우           
             newDIV.className = "today";
             newDIV.onclick = function () { choiceDate(this); }
         }
@@ -290,10 +290,10 @@ function buildCalendar_Air() {
             nowRow = tbody_Calendar.insertRow();    // 새로운 행 추가
         }
 
-        if (nowDay < today) {                       // 지난날인 경우
+        if (nowDay < main_today) {                       // 지난날인 경우
             newDIV.className = "pastDay";
         }
-        else if (nowDay.getFullYear() == today.getFullYear() && nowDay.getMonth() == today.getMonth() && nowDay.getDate() == today.getDate()) { // 오늘인 경우           
+        else if (nowDay.getFullYear() == main_today.getFullYear() && nowDay.getMonth() == main_today.getMonth() && nowDay.getDate() == main_today.getDate()) { // 오늘인 경우           
             newDIV.className = "today";
             newDIV.onclick = function () { choiceDate(this); }
         }
@@ -338,10 +338,10 @@ function buildCalendar_Start() {
             nowRow = tbody_Calendar.insertRow();    // 새로운 행 추가
         }
 
-        if (nowDay < today) {                       // 지난날인 경우
+        if (nowDay < main_today) {                       // 지난날인 경우
             newDIV.className = "pastDay";
         }
-        else if (nowDay.getFullYear() == today.getFullYear() && nowDay.getMonth() == today.getMonth() && nowDay.getDate() == today.getDate()) { // 오늘인 경우           
+        else if (nowDay.getFullYear() == main_today.getFullYear() && nowDay.getMonth() == main_today.getMonth() && nowDay.getDate() == main_today.getDate()) { // 오늘인 경우           
             newDIV.className = "today";
             newDIV.onclick = function () { choiceDate(this); }
         }
@@ -386,10 +386,10 @@ function buildCalendar_End() {
             nowRow = tbody_Calendar.insertRow();    // 새로운 행 추가
         }
 
-        if (nowDay < today) {                       // 지난날인 경우
+        if (nowDay < main_today) {                       // 지난날인 경우
             newDIV.className = "pastDay";
         }
-        else if (nowDay.getFullYear() == today.getFullYear() && nowDay.getMonth() == today.getMonth() && nowDay.getDate() == today.getDate()) { // 오늘인 경우           
+        else if (nowDay.getFullYear() == main_today.getFullYear() && nowDay.getMonth() == main_today.getMonth() && nowDay.getDate() == main_today.getDate()) { // 오늘인 경우           
             newDIV.className = "today";
             newDIV.onclick = function () { choiceDateEnd(this); }
         }
