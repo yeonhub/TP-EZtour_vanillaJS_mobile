@@ -280,13 +280,13 @@ function tour(){
 
 function mainInit() {
 
-    if (location.pathname.split('/').pop() == 'package_m.html') {
+    if (location.pathname.split('/').pop() == 'package.html') {
         package_m();
     }
     if (
-        location.pathname.split("/").pop() == "tour_le_m.html" ||
-        location.pathname.split("/").pop() == "tour_mu_m.html" ||
-        location.pathname.split("/").pop() == "tour_fo_m.html"
+        location.pathname.split("/").pop() == "active.html" ||
+        location.pathname.split("/").pop() == "museum.html" ||
+        location.pathname.split("/").pop() == "food.html"
     ) {
         tour();
     }
