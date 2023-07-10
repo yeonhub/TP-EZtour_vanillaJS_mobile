@@ -4,12 +4,14 @@ function air() {
     const get = (target) => document.querySelector(target);
     const getAll = (target) => document.querySelectorAll(target);
 
+
     // search
     let $roundBtn = get('.airportVis .inner .search .way .roundBtn')
     let $oneBtn = get('.airportVis .inner .search .way .oneBtn')
     let $round = get('.airportVis .inner .search .round')
     let $one = get('.airportVis .inner .search .one')
 
+    
     // vis popup
     // round
     let $visStaR = get('.airportVis .inner .search .round .where .start')

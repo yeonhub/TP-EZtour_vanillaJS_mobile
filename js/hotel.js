@@ -12,6 +12,8 @@ const getAll = (target) => document.querySelectorAll(target);
     let H_timer = null;
     let H_isPlay = true;
 
+    
+
     // vis popup
     let $H_where = get('.hotelVis .inner .search .where .start')
     let $H_wherePopBox = get('.hotelVis .inner .search .popWhereBox')

@@ -11,8 +11,10 @@ function rent() {
     let R_cnt = 0;
     let R_old = 0;
     let R_timer = null;
+
     let R_isPlay = true;
 
+    
     // vis popup
     let $R_visDateS = get('.rentVis .inner .search .when .start_date')
     let $R_visDateSBox = get('.rentVis .inner .search .popDateBox')
