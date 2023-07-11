@@ -9,7 +9,6 @@
 | FE / design | 이명관 | [@audrhks29](https://github.com/audrhks29) | [이벤트](https://yeonhub.github.io/TP-EZtour_vanillaJS_mobile/promotion.html)<br />[제휴/멤버십](https://yeonhub.github.io/TP-EZtour_vanillaJS_mobile/membership.html)<br />[로그인](https://yeonhub.github.io/TP-EZtour_vanillaJS_mobile/login.html)/[회원가입](https://yeonhub.github.io/TP-EZtour_vanillaJS_mobile/join.html)                 |
 | FE          | 이상연 | [@yeonhub](https://github.com/yeonhub)     | [항공권](https://yeonhub.github.io/TP-EZtour_vanillaJS_mobile/airport.html)<br />[호텔](https://yeonhub.github.io/TP-EZtour_vanillaJS_mobile/hotel.html)<br />[렌터카](https://yeonhub.github.io/TP-EZtour_vanillaJS_mobile/rent.html)                                                                                                        |
 
-ddd
 
 # 프로젝트 사이트
 
@@ -30,6 +29,37 @@ ddd
 - [X] Vanilla Script
 
 # 프로젝트 기능 구현
+
+## 0) CSS style mobile
+
+기존 pc 버전의 css를 mobile 버전으로 수정하기 위해 단위 변경
+
+뷰포트(vw, vh) 사용
+
+```css
+/* 자주찾는질문 CSS */
+.qnaVis {
+    width: 100%;
+    height: 41.6667vh;
+    background-image: url(../images/qna/qnaVisual.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    text-align: center;
+}
+
+
+.qnaVis h2 {
+    width: 100%;
+    padding-top: 5.5556vw;
+    margin-bottom: 5.5556vw;
+    text-align: center;
+    font-size: 4.4444vw;
+    font-weight: 700;
+    color: #fff;
+}
+```
+
 
 ## 1) header
 
