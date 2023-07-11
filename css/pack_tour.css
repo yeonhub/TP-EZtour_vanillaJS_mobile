@@ -649,7 +649,7 @@
 }
 
  .tour_pack_sale .tour_packtour_roll {
-    overflow: visible;
+    overflow: hidden;
 }
 
  .tour_pack_sale .tour_packtour_roll .swiper-pagination {
